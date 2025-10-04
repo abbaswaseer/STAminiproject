@@ -13,8 +13,10 @@ website:
     
 format:
   html:
-    theme: sandstone
+    theme: lumen
     toc: false
+    code-fold: true
+    code-summary: "Click to View Code"
 
 editor:
   mode: source
