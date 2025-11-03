@@ -4,19 +4,44 @@ project:
 
 website:
   title: "STA 9750 Submission Material"
-  description:
-    Course Projects for STA 9750 at Baruch College
+  description: Course Projects for STA 9750 at Baruch College
   site-url: "https://abbaswaseer.github.io/STA9750-2025-FALL/"
   navbar:
     background: primary
     search: false
-    
+    # keep the bar visible while scrolling (optional)
+    pinned: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Mini Projects
+        menu:
+          - text: MP01 — Data Wrangling
+            href: mp01.qmd
+          - text: MP02 — YIMBY (Backyards)
+            href: mp02.qmd
+      - text: Course Page
+        href: https://michael-weylandt.com/STA9750/
+        target: _blank
+    right:
+      - icon: github
+        aria-label: GitHub
+        href: https://github.com/abbaswaseer/STA9750-2025-FALL
+
+execute:
+  warning: false
+  message: false
+  error: false
+
 format:
   html:
-    theme: lumen
-    toc: false
+    theme: flatly
+    toc: true
+    toc-location: left
     code-fold: true
     code-summary: "Click to View Code"
+    # optional: next/prev buttons between pages
+    page-navigation: true
 
 editor:
   mode: source
